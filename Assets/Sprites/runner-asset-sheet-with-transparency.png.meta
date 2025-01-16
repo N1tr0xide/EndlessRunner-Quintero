@@ -397,6 +397,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2547,7 +2612,104 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      runner-asset-sheet-with-transparency_0: 1450428306128310148
+      runner-asset-sheet-with-transparency_1: 6886087657637401779
+      runner-asset-sheet-with-transparency_10: -5874730425519939595
+      runner-asset-sheet-with-transparency_11: 1245051716772599504
+      runner-asset-sheet-with-transparency_12: 1965801584603776079
+      runner-asset-sheet-with-transparency_13: -4059526860667887207
+      runner-asset-sheet-with-transparency_14: -8997322545482577298
+      runner-asset-sheet-with-transparency_15: -7278470641513065756
+      runner-asset-sheet-with-transparency_16: -324668255677542411
+      runner-asset-sheet-with-transparency_17: 1643104984751495862
+      runner-asset-sheet-with-transparency_18: -8022967219206164088
+      runner-asset-sheet-with-transparency_19: 1184153991978935195
+      runner-asset-sheet-with-transparency_2: -4268797328210254850
+      runner-asset-sheet-with-transparency_20: 6999317665063159641
+      runner-asset-sheet-with-transparency_21: 384913430129489445
+      runner-asset-sheet-with-transparency_22: 7568640342540356298
+      runner-asset-sheet-with-transparency_23: 6281409315508404128
+      runner-asset-sheet-with-transparency_24: 3979891274892134089
+      runner-asset-sheet-with-transparency_25: -5003214528793446187
+      runner-asset-sheet-with-transparency_26: 6795032054036444184
+      runner-asset-sheet-with-transparency_27: 307021552477709759
+      runner-asset-sheet-with-transparency_28: -3984803542088684712
+      runner-asset-sheet-with-transparency_29: 1636785480123896661
+      runner-asset-sheet-with-transparency_3: -2715086209703611556
+      runner-asset-sheet-with-transparency_30: -8898835488316208950
+      runner-asset-sheet-with-transparency_31: -1494499896795368118
+      runner-asset-sheet-with-transparency_32: -9112964073842330600
+      runner-asset-sheet-with-transparency_33: 2387381566287186190
+      runner-asset-sheet-with-transparency_34: -7204718928810694081
+      runner-asset-sheet-with-transparency_35: -6613805713046992129
+      runner-asset-sheet-with-transparency_36: -8494820547213417057
+      runner-asset-sheet-with-transparency_37: 4752423994405767412
+      runner-asset-sheet-with-transparency_38: 5397844476499519295
+      runner-asset-sheet-with-transparency_39: -8573774627777545275
+      runner-asset-sheet-with-transparency_4: 7466652119371545041
+      runner-asset-sheet-with-transparency_40: 5154069358530095081
+      runner-asset-sheet-with-transparency_41: -5771722544140724191
+      runner-asset-sheet-with-transparency_42: 1704223073487262916
+      runner-asset-sheet-with-transparency_43: 4946034994668983668
+      runner-asset-sheet-with-transparency_44: -6367967766482602808
+      runner-asset-sheet-with-transparency_45: 7895751110704896539
+      runner-asset-sheet-with-transparency_46: -1764384531056673102
+      runner-asset-sheet-with-transparency_47: -4252391676793366473
+      runner-asset-sheet-with-transparency_48: 2348701646361036067
+      runner-asset-sheet-with-transparency_49: 9187163311166401480
+      runner-asset-sheet-with-transparency_5: -5933277926256746691
+      runner-asset-sheet-with-transparency_50: -3394989810901909975
+      runner-asset-sheet-with-transparency_51: 4363623580264948782
+      runner-asset-sheet-with-transparency_52: 1105140972352360523
+      runner-asset-sheet-with-transparency_53: -1204539676136646369
+      runner-asset-sheet-with-transparency_54: 1000527826854545262
+      runner-asset-sheet-with-transparency_55: -3397980048888623244
+      runner-asset-sheet-with-transparency_56: -5641241185189034587
+      runner-asset-sheet-with-transparency_57: -4675587363610798558
+      runner-asset-sheet-with-transparency_58: 1524100676249393339
+      runner-asset-sheet-with-transparency_59: 1522204586386693002
+      runner-asset-sheet-with-transparency_6: 626428737318397740
+      runner-asset-sheet-with-transparency_60: -5318778951198126218
+      runner-asset-sheet-with-transparency_61: 2943898466969554322
+      runner-asset-sheet-with-transparency_62: 5509443129194866389
+      runner-asset-sheet-with-transparency_63: 5243650987612142997
+      runner-asset-sheet-with-transparency_64: 5079419928930362185
+      runner-asset-sheet-with-transparency_65: -1297839777865209749
+      runner-asset-sheet-with-transparency_66: 820150082723338495
+      runner-asset-sheet-with-transparency_67: 8882608365271548240
+      runner-asset-sheet-with-transparency_68: 5689248170163435195
+      runner-asset-sheet-with-transparency_69: -6198234364540936952
+      runner-asset-sheet-with-transparency_7: -8164912854987599446
+      runner-asset-sheet-with-transparency_70: -4856499049357989591
+      runner-asset-sheet-with-transparency_71: -7377579461541566325
+      runner-asset-sheet-with-transparency_72: -3403742876624548300
+      runner-asset-sheet-with-transparency_73: 8875938585985246935
+      runner-asset-sheet-with-transparency_74: -7661749293059360401
+      runner-asset-sheet-with-transparency_75: -2638852380916637288
+      runner-asset-sheet-with-transparency_76: -5860623795422077170
+      runner-asset-sheet-with-transparency_77: -6509164246901347230
+      runner-asset-sheet-with-transparency_78: 8414503194962292723
+      runner-asset-sheet-with-transparency_79: 8708190469410119620
+      runner-asset-sheet-with-transparency_8: -6360149161495387047
+      runner-asset-sheet-with-transparency_80: 3445397718636471068
+      runner-asset-sheet-with-transparency_81: -3867775299113738002
+      runner-asset-sheet-with-transparency_82: 7457111129686905900
+      runner-asset-sheet-with-transparency_83: -3809901432158416238
+      runner-asset-sheet-with-transparency_84: 6457297312797790258
+      runner-asset-sheet-with-transparency_85: 5746215050180021556
+      runner-asset-sheet-with-transparency_86: 4915484810918219262
+      runner-asset-sheet-with-transparency_87: 2137024132871099621
+      runner-asset-sheet-with-transparency_88: -5526858093829969943
+      runner-asset-sheet-with-transparency_89: -5172696193955089949
+      runner-asset-sheet-with-transparency_9: 5047058555332144285
+      runner-asset-sheet-with-transparency_90: -970555972541462361
+      runner-asset-sheet-with-transparency_91: 7307220896605640944
+      runner-asset-sheet-with-transparency_92: 4168257586194352420
+      runner-asset-sheet-with-transparency_93: -5632172562612309690
+      runner-asset-sheet-with-transparency_94: -3751620460297422296
+      runner-asset-sheet-with-transparency_95: -7080080528164106172
+      runner-asset-sheet-with-transparency_96: 8982911296294617754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

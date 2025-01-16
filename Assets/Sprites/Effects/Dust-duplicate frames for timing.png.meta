@@ -163,6 +163,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -597,7 +662,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dust-duplicate frames for timing_0: 7498176635917876080
+      Dust-duplicate frames for timing_1: -4413194647617052596
+      Dust-duplicate frames for timing_10: 7480889018420348913
+      Dust-duplicate frames for timing_11: 151072116079798721
+      Dust-duplicate frames for timing_12: -354133368270422576
+      Dust-duplicate frames for timing_13: 2057717696625731599
+      Dust-duplicate frames for timing_14: -8277128078295592027
+      Dust-duplicate frames for timing_15: -1235450035855173066
+      Dust-duplicate frames for timing_16: -3261568992675672092
+      Dust-duplicate frames for timing_17: -7219072030815041664
+      Dust-duplicate frames for timing_18: 9025904030015377509
+      Dust-duplicate frames for timing_2: -4541851600818551405
+      Dust-duplicate frames for timing_3: -3995475068545262001
+      Dust-duplicate frames for timing_4: -219299295216521447
+      Dust-duplicate frames for timing_5: -8631558309634983683
+      Dust-duplicate frames for timing_6: -5425351606244533078
+      Dust-duplicate frames for timing_7: 4183717861138595377
+      Dust-duplicate frames for timing_8: 1905646545252876036
+      Dust-duplicate frames for timing_9: -2244838456636580449
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
