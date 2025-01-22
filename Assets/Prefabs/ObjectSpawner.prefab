@@ -48,3 +48,5 @@ MonoBehaviour:
   _objectsToPool:
   - {fileID: 7685918027417380810, guid: 4d956255353be93419118895e4edd8d8, type: 3}
   - {fileID: 2837802975435510881, guid: 59d3afb9a905edf4099e8692fc2a3256, type: 3}
+  - {fileID: 1129623997525713252, guid: a87c3e7fc8b0c1141b1022c74009fc64, type: 3}
+  - {fileID: 5003845967104351051, guid: bfdd0fbd98985f54d8c71e90ea903099, type: 3}

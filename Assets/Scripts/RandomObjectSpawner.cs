@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class RandomObjectSpawner : MonoBehaviour
 {
-    public static RandomObjectSpawner Instance;
     private List<GameObject> _pooledObjects;
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private GameObject[] _objectsToPool;
-    
-    void Awake() {
-        Instance = this;
-    }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,17 +17,21 @@ public class RandomObjectSpawner : MonoBehaviour
         {
             AddObjectToPool(poolObj);
         }
-
-        StartCoroutine(SpawnRandomly());
     }
-    
+
     private void SpawnObject()
     {
         string randomObj = _objectsToPool[Random.Range(0, _objectsToPool.Length)].tag;
-        GameObject newObj = GetObject(randomObj);
+        GameObject newObj = randomObj is "Alien" or "Obstacle" ? GetObject(randomObj, false) : GetObject(randomObj);
+        
+        if(newObj == null) return;
 
         switch (randomObj)
         {
+            case "Alien":
+                newObj.transform.position = _spawnPoint.position;
+                newObj.SetActive(true);
+                break;
             default:
                 newObj.transform.position = _spawnPoint.position + new Vector3(0,Random.Range(0,3));
                 newObj.SetActive(true);
@@ -60,6 +59,7 @@ public class RandomObjectSpawner : MonoBehaviour
             }
         }
 
+        // ReSharper disable once Unity.PerformanceCriticalCodeInvocation
         Debug.LogError("Object with tag not found in Pool. New object could not be added.");
         return null;
     }
@@ -74,8 +74,15 @@ public class RandomObjectSpawner : MonoBehaviour
 
     private IEnumerator SpawnRandomly()
     {
-        yield return new WaitForSeconds(Random.Range(1, 3));
-        SpawnObject();
+        while (!GameManager.Instance.IsGameOver)
+        {
+            yield return new WaitForSeconds(Random.Range(1, 3));
+            SpawnObject();
+        }
+    }
+
+    public void StartSpawning()
+    {
         StartCoroutine(SpawnRandomly());
     }
 }

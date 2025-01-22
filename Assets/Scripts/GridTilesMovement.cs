@@ -23,13 +23,17 @@ public class GridTilesMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _foreground.transform.Translate(Vector3.left * (_speed * Time.deltaTime));
+        if(GameManager.Instance.IsGameOver) return;
+        
+        float speed = _speed + GameManager.Instance.WorldSpeed;
+        
+        _foreground.transform.Translate(Vector3.left * (speed * Time.deltaTime));
         if (_foreground.transform.position.x < _foregroundStartPos.x - _foregroundWidth)
         { 
             _foreground.transform.position = _foregroundStartPos;
         }
         
-        _background.transform.Translate(Vector3.left * ((_speed / 2) * Time.deltaTime));
+        _background.transform.Translate(Vector3.left * ((speed / 2) * Time.deltaTime));
         if (_background.transform.position.x < _backgroundStartPos.x - _backgroundWidth)
         { 
             _background.transform.position = _backgroundStartPos;

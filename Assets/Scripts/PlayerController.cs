@@ -1,10 +1,8 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private GameManager _gameManager;
     private Rigidbody2D _rb;
     private LayerMask _groundLayer;
     private bool _isGrounded;
@@ -17,7 +15,6 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _gameManager = FindFirstObjectByType<GameManager>();
         _rb = GetComponent<Rigidbody2D>();
         _groundLayer = LayerMask.GetMask("Ground");
     }
@@ -25,23 +22,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.Instance.IsGameOver) return;
+        
         CheckGrounded();
 
         if(!IsGrounded && _rb.linearVelocityY < 2) 
         {
             _rb.AddForceY(-2);
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-        }
     }
 
     public void Jump()
     {
         if(!_isGrounded) return;
-        else _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+        _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
 
     private void CheckGrounded()
@@ -51,10 +45,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Diamond") || other.CompareTag("DiamondB"))
+        if (other.CompareTag("Diamond"))
         {
-            _gameManager.IncreaseScore(other.GetComponent<DiamondController>().Score);
+            GameManager.Instance.IncreaseScore(other.GetComponent<ObstacleController>().Score);
             other.gameObject.SetActive(false);
+        }
+        else if (other.CompareTag("Obstacle") || other.CompareTag("Alien"))
+        {
+            other.gameObject.SetActive(false);
+            GetComponent<Collider2D>().enabled = false;
+            GameManager.Instance.GameOver();
         }
     }
 
