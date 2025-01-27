@@ -7,6 +7,7 @@ TagManager:
   - Diamond
   - Obstacle
   - Alien
+  - Powerup
   layers:
   - Default
   - TransparentFX

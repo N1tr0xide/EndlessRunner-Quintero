@@ -22,7 +22,7 @@ public class RandomObjectSpawner : MonoBehaviour
     private void SpawnObject()
     {
         string randomObj = _objectsToPool[Random.Range(0, _objectsToPool.Length)].tag;
-        GameObject newObj = randomObj is "Alien" or "Obstacle" ? GetObject(randomObj, false) : GetObject(randomObj);
+        GameObject newObj = randomObj is "Alien" or "Obstacle" or "Powerup"? GetObject(randomObj, false) : GetObject(randomObj);
         
         if(newObj == null) return;
 

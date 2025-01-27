@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private const float MaxWorldSpeed = 30;
     private bool _isGameOver = false;
     private bool _gameStarted = false;
+    private AudioSource _audioSource;
 
     [Header("UI")] 
     [SerializeField] private GameObject _gameOverPanel;
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
     {
         _gameOverPanel.SetActive(false);
         _startGamePanel.SetActive(true);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void StartGame()
@@ -55,8 +57,7 @@ public class GameManager : MonoBehaviour
         _scoreText.text = "Score: " + _score;
         
         if(!shouldIncreaseSpeed) return;
-        _worldSpeed += .05f;
-        print(_worldSpeed);
+        _worldSpeed += .1f;
         if (_worldSpeed > MaxWorldSpeed) _worldSpeed = MaxWorldSpeed;
     }
 
@@ -94,6 +95,11 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+
+    public void PlayOneShot(AudioClip clip)
+    {
+        _audioSource.PlayOneShot(clip);
+    }
 
     private IEnumerator IncreaseScoreEachSecond()
     {
